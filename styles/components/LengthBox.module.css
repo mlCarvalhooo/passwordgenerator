@@ -1,0 +1,89 @@
+.lengthBox {
+    height: 45px;
+    width: 500px;
+    margin: 10px;    
+
+    box-shadow: 0.1px .25px 1px #888888;
+    border-radius: 10px;
+
+    display: flex;
+}
+
+.title,
+.errorTitle {
+    border-radius: 10px 0px 0px 10px;
+    background-color: white;
+    width: 150px;
+    display: flex;
+}
+
+.errorTitle {
+    border: solid red;
+    border-width: 1.5px 0px 1.5px 1.5px;
+}
+
+.errorTitle label,
+.title label {
+    height: inherit;
+    width: inherit;
+    padding: 10px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.input,
+.errorInput {
+    border-radius: 0px 10px 10px 0px;
+    background-color: whitesmoke;
+    width: 350px;
+    display: flex;
+}
+
+.errorInput {
+    border: solid red;
+    border-width: 1.5px 1.5px 1.5px 0px;
+}
+
+.input input,
+.errorInput input {
+    width: inherit;
+    padding: 10px;
+
+    border-radius: 0px 10px 10px 0px;
+    background-color: inherit;
+    border: 0px none;
+
+    font-size: 17px;
+    text-align: center;
+}
+
+.input input:focus,
+.errorInput input:focus {
+    outline: none;
+}
+
+.warningShown,
+.warningHidden {
+    height: 45px;
+    margin: 10px;
+    width: 500px;
+    border-radius: 10px;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+} 
+.warningShown {
+    -webkit-animation: blink 1s ease;
+    -moz-animation: blink 1s ease;
+    animation: blink 1s ease;
+    background-color: red;
+}
+
+@keyframes blink {  
+    0% { opacity: 0.2; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 0.2; }
+    100% { opacity: 0; }
+}

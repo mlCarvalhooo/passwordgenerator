@@ -1,0 +1,144 @@
+.hoveredContainer,
+.notHoveredContainer{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    max-width: 50px;
+    width: 50px;
+    z-index: 100;
+}
+
+
+.arrowContainer{
+    height: inherit;
+    width: 50px;
+    border-radius: 25px;
+    background-color: purple;
+    display: flex;
+    cursor: pointer;
+    float: right;
+
+    box-shadow: 1px 2px 3px #888888;
+
+}
+
+.arrow{
+    display: flex;
+    color: white;
+    margin: auto;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+
+.hoveredContainer .arrowContainer .arrow{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+
+.socialMedia {
+    box-shadow: 0.25px 0.25px 1px #888888;
+
+    list-style: none;
+    position: fixed;
+    background-color: whitesmoke;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    border-radius: 25px;
+    display: flex;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    z-index: -1;
+    min-width: 40px;
+}
+
+.hoveredContainer .socialMedia{
+    min-width: 100px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    padding-right: 45px;
+}
+
+.notHoveredContainer .socialMedia{
+    max-width: 40px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+
+.socialMedia a{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    border-radius: 25px;
+    margin: 2.5px;
+    color: black;
+    opacity: 0;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.socialMedia a svg{
+    margin: 2.5px;
+}
+
+.hoveredContainer .socialMedia a{
+    transform-origin: top center;
+    animation: slideDown 0.3s ease-in-out forwards;
+}
+
+.notHoveredContainer .socialMedia a{
+    transform-origin: top center;
+    animation: slideBack 0.2s ease-in-out forwards;
+}
+
+.hoveredContainer .socialMedia a:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+@keyframes slideDown {
+    0% { 
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        display: block;
+    }
+}
+
+@keyframes slideBack {
+    0% { 
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(60px);
+        display: none;
+    }
+}
+
+@keyframes hover{
+    0% { 
+        background-color: rgb(204, 204, 204, 1);
+    }
+    100% {
+        background-color: rgb(204, 204, 204, 1);
+    }
+}
+
+
+@keyframes rotateIn{
+    0% { 
+        background-color: rgb(204, 204, 204, 1);
+    }
+    100% {
+        background-color: rgb(204, 204, 204, 1);
+    }
+}

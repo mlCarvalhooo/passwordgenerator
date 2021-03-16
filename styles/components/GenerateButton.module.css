@@ -1,0 +1,43 @@
+.button,
+.buttonAnimation {
+    height: 45px;
+    width: 300px;
+    margin: 0px auto 0px auto;
+
+    background-color: white;
+    box-shadow: 0.1px .25px 1px #888888;
+    border-radius: 10px;
+    
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+}
+
+.buttonAnimation {
+    -webkit-animation: blink 0.5s ease;
+    -moz-animation: blink 0.5s ease;
+    animation: blink 0.5s ease;
+}
+
+.button:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.button a,
+.buttonAnimation a {
+    height: inherit;
+    width: inherit;
+    padding: 10px;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+@keyframes blink {  
+    0% { background-color:rgb(231, 231, 231) }
+    100% { background-color: rgb(250, 250, 250); }
+}
+@-webkit-keyframes blink {
+    0% { background-color:rgb(231, 231, 231)  }
+    100% { background-color: rgb(250, 250, 250); }
+}

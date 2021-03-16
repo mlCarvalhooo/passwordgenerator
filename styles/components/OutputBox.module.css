@@ -1,0 +1,87 @@
+.outputBox {
+    width: 500px;
+    margin: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0.1px .25px 1px #888888;
+
+    display: flex;
+}
+
+.optionsNotAnimation,
+.optionsAnimation{
+    width: 75px;
+
+    border-radius: 10px 0px 0px 10px;
+    background-color: white;
+
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.optionsNotAnimation:hover,
+.optionsAnimation:hover{
+    background-color: rgb(250, 250, 250);
+}
+
+
+.optionsAnimation{
+    -webkit-animation: blink 1.5s ease;
+    -moz-animation: blink 1.5s ease;
+    animation: blink 1.5s ease;
+}
+
+.optionsNotAnimation a,
+.optionsAnimation a {
+    font-size: 15px;
+    margin: auto;
+}
+
+.optionsNotAnimation svg, 
+.optionsAnimation svg {
+    padding: 10px;
+    color: black;
+    margin: auto;
+}
+
+.output {
+    width: 425px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.output input {
+    width: inherit;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: inherit;
+    border: 0px none;
+    font-size: 15px;
+}
+
+.output input:focus{
+    outline: none;
+}
+
+.strength{
+    display: flex;
+    margin: auto 10px 10px auto;
+}
+
+.strength a {
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+@keyframes blink {  
+    0% { background-color:rgb(231, 231, 231) }
+    100% { background-color: rgb(250, 250, 250); }
+}
+@-webkit-keyframes blink {
+    0% { background-color:rgb(231, 231, 231)  }
+    100% { background-color: rgb(250, 250, 250); }
+}

@@ -1,0 +1,35 @@
+.box {
+    height: 45px;
+    width: 500px;
+    margin: 10px;
+
+    box-shadow: 0.1px .25px 1px #888888;
+    border-radius: 10px;
+
+    display: flex;
+}
+
+.title {
+    border-radius: 10px 0px 0px 10px;
+    background-color: white;
+    width: 150px;
+    display: flex;
+}
+
+.title label {
+    height: inherit;
+    width: inherit;
+    padding: 10px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.input{
+    border-radius: 0px 10px 10px 0px;
+    background-color: whitesmoke;
+    width: 350px;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+}
