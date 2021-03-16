@@ -13,3 +13,6 @@ A Next.js application to generate random and secure passwords.
 ### Showcase Video
 
 https://user-images.githubusercontent.com/61433075/111343447-57f58000-8673-11eb-9524-c45c6092cd0b.mp4
+
+### Test it yourself
+This project is hosted at Vercel so you can try it out for yourself. Access the website [clicking here](https://passwordgenerator-mlcarvalhooo.vercel.app/).
